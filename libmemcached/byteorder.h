@@ -41,6 +41,10 @@
 extern "C" {
 #endif
 
+#ifdef HAVE_SYS_TYPES_H
+#include <sys/types.h>
+#endif
+
 uint64_t memcached_ntohll(uint64_t);
 
 uint64_t memcached_htonll(uint64_t);
